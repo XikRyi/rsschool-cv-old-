@@ -1,7 +1,7 @@
 html {
 	scroll-behavior: smooth;
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-size: 18px;
 	font-weight: 400;
 	line-height: 1.5;
@@ -17,7 +17,7 @@ body {
   box-sizing: border-box;
 }
 .container {
-  border: 1px solid rgb(240, 35, 171);
+  border: 1px solid rgb(172, 91, 145);
   max-inline-size: 1440px;
   margin: 0 auto;
 }
@@ -37,12 +37,12 @@ body {
 .nav-link {
   transition: 0.3s;
 }
-.section-item a {
+.section {
   color: #cf4ea4;
   text-decoration: none;
   transition: color 0.5s;
 }
-.section-item a:hover {
+.section hover {
   color: #b84646;
 }
 
