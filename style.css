@@ -1,20 +1,24 @@
+html {
+	scroll-behavior: smooth;
 body {
   font-family: "Roboto", sans-serif;
-  min-height: 100px;
+  font-size: 18px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #000000;
+  min-block-size: 100px;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
+  justify-content: space-between;}
+ 
 * {
   box-sizing: border-box;
 }
-* {
-  border: 1px solid rgb(240, 35, 171);
-}
 .container {
-  max-width: 1440px;
+  border: 1px solid rgb(240, 35, 171);
+  max-inline-size: 1440px;
   margin: 0 auto;
 }
 .nav-list {
@@ -22,9 +26,7 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 .nav-list {
   list-style: none;
 }
@@ -43,13 +45,7 @@ html {
 .section-item a:hover {
   color: #b84646;
 }
-body {
-  font-family: "Roboto", sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #000000;
-}
+
 .section-title {
   font-size: 20px;
   font-weight: 400;
@@ -67,24 +63,24 @@ body {
   color: #030c04;
 }
 .rss {
-  width: 121px;
-  height: 45px;
+  inline-size: 121px;
+  block-size: 45px;
   background-image: url("./assets/rss.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }
 .section-item {
   position: relative;
-  padding-left: 30px;
+  padding-inline-start: 30px;
 }
 
 .section-item::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px;
+  inset-block-start: 8px;
+  inset-inline-start: 0px;
+  inline-size: 10px;
+  block-size: 10px;
   border: 1px solid #829985;
   border-radius: 50%;
 }
