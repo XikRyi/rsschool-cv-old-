@@ -1,4 +1,4 @@
-style 
+
 body {font-family: 'Roboto', sans-serif; min-height: 100px; margin: 0; padding: 0; display: flex; flex-direction: column; justify-content: space-between;}
 * {
 	box-sizing: border-box;
@@ -56,4 +56,25 @@ body {font-family: 'Roboto', sans-serif; min-height: 100px; margin: 0; padding: 
 	 .link:hover {
 		color: #030c04;
 	 }
-style
+	 .rss {
+		width: 121px;
+		height: 45px;
+		background-image: url("./assets/rss.svg");
+		background-size: contain;
+		background-repeat: no-repeat;
+	 }
+	 .section-item {
+		position: relative;
+		padding-left: 30px;
+	 }
+	 
+	 .section-item::before {
+		content: "";
+		position: absolute;
+		top: 8px;
+		left: 0px;
+		width: 10px;
+		height: 10px; 
+		border: 1px solid #829985;
+		border-radius: 50%;
+	 }
